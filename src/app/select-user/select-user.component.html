@@ -1,0 +1,17 @@
+<div class="container text-center">
+  <h1 class="mb-4">Corporativo Maxiaba</h1>
+  <h2 class="mb-5">¿Quién ingresará al sistema?</h2>
+  <div class="user-selection">
+      <div class="user-option" (click)="selectUser('invitado')">
+          <img src="image.png" alt="Invitado" class="img-fluid rounded-circle">
+          <p>Invitado</p>
+      </div>
+      <div class="user-option" (click)="selectUser('usuario')">
+          <img src="image.png" alt="Usuario" class="img-fluid rounded-circle">
+          <p>Usuario</p>
+      </div>
+  </div>
+  <div class="d-flex justify-content-center mt-5">
+    <button class="btn btn-primary" (click)="irAAdministrador()">Administrador</button>
+  </div>
+</div>
